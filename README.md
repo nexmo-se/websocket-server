@@ -43,11 +43,12 @@ There is no environment variable (no .env file) needed to be set for this sample
 
 Receives audio from the PSTN legs connected to this WebSocket (set up by the Voice API application named pstn-websocket.js)<br><br>
 
-Your actual application can send audio in the other direction to those PSTN legs via the established WebSocket<br><br>
+Your actual middleware application can send audio in the other direction to those PSTN legs via the established WebSocket<br><br>
 
 
 
 ## Some capabilities handled by this sample application code
 
-Detects DTMF events received from Vonage Voice API platform.
+Detects DTMF events received from Vonage Voice API platform.<br><br>
+
 That capability is also used for when connecting a WebSocket with an outbound PSTN call, near the beginning of the session, the first received DTMF '#' signals that non silence inbound audio packets start to flow in, as corresponding outbound PSTN call just got answered<br><br>
