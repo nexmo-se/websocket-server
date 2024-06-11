@@ -25,7 +25,7 @@ For the next steps, you will need:
 e.g. `xxxxxxxx.ngrok.io`, `xxxxxxxx.herokuapp.com`, `myserver.mycompany.com:32000` (will be needed when setting up the sample Voice API application side) ,</br>
 no `port` is necessary with ngrok or heroku as public hostname.</br>
 
-Have Node.js installed on your system, this application has been tested with Node.js version 18.19.1<br><br>
+Have Node.js installed on your system, this application has been tested with Node.js version 18.19.1<br>
 
 Install node modules with the command:<br>
  ```bash
@@ -41,9 +41,9 @@ There is no environment variable (no .env file) needed to be set for this sample
 
 ## How this application works
 
-Receives audio from the PSTN legs connected to this WebSocket (set up by the Voice API application named pstn-websocket.js)<br>
+Receives audio from the PSTN legs connected to this WebSocket (set up by the Voice API application named pstn-websocket.js).<br>
 
-Your actual middleware application can send audio in the other direction to those PSTN legs via the established WebSocket<br><br>
+Your actual middleware application can send audio in the other direction to those PSTN legs via the established WebSocket.<br><br>
 
 
 
@@ -51,4 +51,4 @@ Your actual middleware application can send audio in the other direction to thos
 
 Detects DTMF events received from Vonage Voice API platform.<br>
 
-That capability is also used for when connecting a WebSocket with an outbound PSTN call, near the beginning of the session, the first received DTMF '#' (as sent by the Voice API application of that purpose) signals that non silence inbound audio packets start to flow in, as corresponding outbound PSTN call just got answered<br><br>
+That capability is also used for when connecting a WebSocket with an outbound PSTN call, near the beginning of the session, the first received DTMF '#' (as sent by the Voice API application for that purpose) signals that non silence inbound audio packets start to flow in, as corresponding outbound PSTN call just got answered.<br><br>
