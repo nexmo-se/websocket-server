@@ -18,7 +18,7 @@ First set up this server from https://github.com/nexmo-se/websocket-server.
 
 Default local (not public!) reference connection code `port` is: 6000.
 
-If you plan to test using `Local deployment` with ngrok (Internet tunneling service) for both the Dialogflow reference connection code and this sample application, you may set up [multiple ngrok tunnels](https://ngrok.com/docs/agent/config/#tunnel-configurations).
+If you plan to test using `Local deployment` with ngrok (Internet tunneling service) for both this server code and the sample Voice API application, you may set up [multiple ngrok tunnels](https://ngrok.com/docs/agent/config/#tunnel-configurations).
 
 For the next steps, you will need:
 - This server's public hostname and if necessary public port,</br>
