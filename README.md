@@ -41,7 +41,7 @@ There is no environment variable (no .env file) needed to be set for this sample
 
 ## How this application works
 
-Receives audio from the PSTN legs connected to this WebSocket (set up by the Voice API application named pstn-websocket.js).<br>
+Receives audio from the PSTN legs connected to this WebSocket (set up by the Voice API application named pstn-websocket-app.js).<br>
 
 Your actual middleware application can send audio in the other direction to those PSTN legs via the established WebSocket.<br><br>
 
